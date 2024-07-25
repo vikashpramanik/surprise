@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise for You</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <h3>If you want to play a Background Music </h3>
+    <button id="bgmusic">for-song</button>
+    <audio id="backgroundMusic"><source src="Soni Soni_192(PagalWorld.com.sb).mp3" type="audio/mp3"></audio>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img class="imga" src="im1.jpg">
+        </div>
+        <div class="mySlides fade">
+            <img class="imga" src="img2.jpg">
+        </div>
+        <div class="mySlides fade">
+            <img class="imga" src="img3.jpg">
+        </div>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <div class="message-container" id="message-container">
+        <h1>You are amazing! 😊</h1>
+    </div>
+    <button onclick="showMessage()" id="show-message-button">Show Special Message</button>
+    <script src="script.js"></script>
+</body>
+</html>

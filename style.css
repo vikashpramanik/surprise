@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: background-color 0.5s; /* Smooth transition for background color */
+}
+
+h3 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+.message-container {
+    display: none;
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #ff6b6b;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #ff4c4c;
+}
+
+#bgmusic {
+    height: 6vh;
+    font-size: 16px;
+    color: #717171;
+    background: orangered;
+    border-top-left-radius: 2vmin;
+    border-bottom-right-radius: 2vmin;
+    cursor: pointer;
+}
+
+#bgmusic:active {
+    color: #0c0c0c;
+    background: rgb(244, 144, 107);
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets and below */
+@media (max-width: 768px) {
+    .slideshow-container {
+        max-width: 90%;
+    }
+    
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    
+    #bgmusic {
+        font-size: 14px;
+    }
+}
+
+/* Mobile phones and below */
+@media (max-width: 480px) {
+    .message-container {
+        padding: 10px;
+        width: 90%;
+        max-width: 400px;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+    
+    #bgmusic {
+        font-size: 12px;
+    }
+}
